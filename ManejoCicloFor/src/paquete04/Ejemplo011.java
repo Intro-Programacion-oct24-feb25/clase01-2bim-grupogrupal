@@ -21,22 +21,34 @@ public class Ejemplo011 {
     public static void main(String[] args) {
        int num= 1;
        int num2 =1;
-       int resultado;
+       int resultado = 0;
        Scanner entrada = new Scanner(System.in);
        int tabla;
        System.out.println("Hasta que tabla quiere multiplicar");
        tabla = entrada.nextInt();
        System.out.println("Hasta que tabla quiere multiplicar");
-       int limite = entrada.nextInt();
-       while(num <= limite){
-           while(num2<=limite){
+       int limite1 = entrada.nextInt();
+       while(num <= limite1){
+           while(num2<=tabla){
+               resultado =  num * num2;
                
-               System.out.println("");
+               System.out.printf("%s * %s = %s\n",
+                       num,
+                       num2,
+                       resultado);
+                      num2 =+ + 1;
+
        }
-           num2=1;
+                      num2 =1;
+                      num = num + 1;
+          
        }
-       num = num + 1;
+       System.out.printf("%s * %s = %s\n",
+                       num,
+                       num2,
+                       resultado);
     }
+    
 }
     
        
