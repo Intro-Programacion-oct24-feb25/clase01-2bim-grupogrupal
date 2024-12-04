@@ -16,8 +16,8 @@ public class Ejemplo011 {
      */
     public static void main(String[] args) {
         
-        for (int i = 10; i >= 0; i++) {
-            System.out.printf("%d\n", i);
+        for (int i = 10; i >= 0; i--) {
+            System.out.printf("%d\nEl numero es: ", i);
         }
         
         
