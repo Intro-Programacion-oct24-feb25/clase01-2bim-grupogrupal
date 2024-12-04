@@ -16,17 +16,11 @@ public class Ejemplo011 {
      */
     public static void main(String[] args) {
         
-<<<<<<< HEAD
+
         for (int i = 10; i >= 0; i--) {
             System.out.printf("Estamos haciendo pruebas con mi companero\n"
                     + "%d\n", i);
-=======
-        for (int i = 10; i >= 0; i++) {
-            System.out.printf("%d\n", i);
->>>>>>> ce0734a54bcea644e2973c0c0413f3072ffc7453
+        
         }
-        
-        
     }
-    
 }
