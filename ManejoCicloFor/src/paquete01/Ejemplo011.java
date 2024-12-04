@@ -20,7 +20,16 @@ public class Ejemplo011 {
         for (int i = 10; i >= 0; i--) {
             System.out.printf("Estamos haciendo pruebas con mi companero\n"
                     + "%d\n", i);
+<<<<<<< HEAD
+        }
+    }
+}
+   
+    
+
+=======
         
         }
     }
 }
+>>>>>>> 40628a6d2fff24538d79b7a21e3bb069d7862873
