@@ -19,38 +19,45 @@ public class Ejemplo011 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-       int num= 1;
-       int num2 =1;
-       int resultado = 0;
-       Scanner entrada = new Scanner(System.in);
-       int tabla;
-       System.out.println("Hasta que tabla quiere multiplicar");
-       tabla = entrada.nextInt();
-       System.out.println("Hasta que tabla quiere multiplicar");
-       int limite1 = entrada.nextInt();
-       while(num <= limite1){
-           while(num2<=tabla){
-               resultado =  num * num2;
-               
-               System.out.printf("%s * %s = %s\n",
-                       num,
-                       num2,
-                       resultado);
-                      num2 =+ + 1;
-
+         Scanner entrada = new Scanner(System.in);
+       int num1 = 1;
+       int num2 = 1;
+       int limite1;
+       int limite2;
+       
+       String cadena = "";
+       
+        System.out.println("Ingrese el limite de su tabla");
+        limite1 = entrada.nextInt();
+        System.out.println("Ingrese hasta que tabla desea operar");
+        limite2 = entrada.nextInt();
+        
+        
+       while(num1 <= limite1){
+           while(num2 <= limite2){
+                int resultado = num1 * num2;
+                cadena = String.format("%s%d * %d = %d\n",
+                   cadena,
+                   num1,
+                   num2,
+                   resultado);
+                 num2 = num2 + 1;
        }
-                      num2 =1;
-                      num = num + 1;
-          
+           num2 = 1;
+           num1 = num1 + 1;
        }
-       System.out.printf("%s * %s = %s\n",
-                       num,
-                       num2,
-                       resultado);
+        System.out.printf("%s",
+                cadena);
+       
+        
+        
     }
-    
-}
-    
+}          
+
+
+
+
+
        
 
 
