@@ -16,11 +16,13 @@ public class Ejemplo011 {
      */
     public static void main(String[] args) {
         
+
         for (int i = 10; i >= 0; i--) {
-            System.out.printf("%d\nEl numero es: ", i);
+            System.out.printf("Estamos haciendo pruebas con mi companero\n"
+                    + "%d\n", i);
         }
-        
-        
     }
-    
 }
+   
+    
+
